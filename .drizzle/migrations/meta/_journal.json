@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1708338987134,
+      "tag": "0000_nice_susan_delgado",
+      "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1708346692171,
+      "tag": "0001_happy_juggernaut",
+      "breakpoints": false
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1708347810286,
+      "tag": "0002_special_ulik",
+      "breakpoints": false
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1708348495434,
+      "tag": "0003_aromatic_moondragon",
+      "breakpoints": false
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1708349708094,
+      "tag": "0004_parched_winter_soldier",
+      "breakpoints": false
+    }
+  ]
+}

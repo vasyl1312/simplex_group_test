@@ -1,0 +1,63 @@
+It is necessary to implement a service with an API for booking a person for an appointment with a doctor, and a reminder 2 hours before the appointment
+
+The following collections can be created in the database.
+
+Users:
+{ 
+     id: 'uuid',
+     phone: '+38 011 555 00 11',
+     name: 'Ivan',
+     ...anything
+}
+
+Doctors:
+{
+     id: 'uuid',
+     name: 'Peter',
+     spec: 'Therapist',
+     // Free slots for recording (you can make an array of objects, or just DateTime)
+     slots: ['date_time', 'date_time'],
+     ...anything
+}
+
+Essentially, we need an API method to register a person for an appointment, we send it to the entrance
+
+User ID
+Doctor ID
+The slot we want to sign up for
+
+{
+     user_id: 'askd90pajsdpojas',
+     doctor_id: 'a987astgydioaushd9a0sdhy',
+     slot: 'date_time',
+     ...anything
+}
+
+Requirements
+
+Only one person can sign up for one slot
+If you try to sign up for an impossible time, an error will be returned
+
+Alert service
+We also need a service that will notify the user:
+
+1 day before appointment
+2 hours before appointment
+Let the service itself simply log messages to a .log file:
+
+{{ current_date }} | Hello {{ user.name }}! We remind you that you have an appointment with {{ doctor.spec }} tomorrow at {{ slot.time }}!
+{{ current_date }} | Hello {{ user.name }}! You will see {{ doctor.spec }} at {{ slot.time }} in 2 hours!
+
+If you need something else for implementation (methods/collections/...anything), then add it, this is more likely not a requirement but a wish
+
+Requirements:
+Migrations. For the service to work, you need to prefill the database (users/doctors), you can run a separate command npm run prefill
+To build the project, just run npm i && npm run dev, if you wish, you can wrap all the dockers, in general, the build should work out of the box. If there is something not trivial, describe it in README.md in the root of the project.
+
+Stack
+nodejs
+mongodb
+...anything
+
+
+# можливо додати можливість створення слотів

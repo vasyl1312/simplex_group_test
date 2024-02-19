@@ -1,0 +1,4 @@
+.env
+dist
+scripts.txt
+node_modules
