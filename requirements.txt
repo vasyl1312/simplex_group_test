@@ -51,13 +51,12 @@ Let the service itself simply log messages to a .log file:
 If you need something else for implementation (methods/collections/...anything), then add it, this is more likely not a requirement but a wish
 
 Requirements:
-Migrations. For the service to work, you need to prefill the database (users/doctors), you can run a separate command npm run prefill
 To build the project, just run npm i && npm run dev, if you wish, you can wrap all the dockers, in general, the build should work out of the box. If there is something not trivial, describe it in README.md in the root of the project.
 
 Stack
 nodejs
-mongodb
+postgresql
 ...anything
 
 
-# можливо додати можливість створення слотів
+# можливо додати можливість створення слотів(типу додати новий для лікаря)
